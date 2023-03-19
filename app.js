@@ -1,10 +1,16 @@
 let person = prompt("Enter Your Name :")
-let gender = prompt("Enter your gender :")
-if(gender == "male"){
+let g = prompt("Enter your gender :")
+
+while(g !="male" &&  g !="female"){
+
+g = prompt("Please enter a correct gender")
+
+}
+if(g == "male" ){
     alert("Welcome Mr. "+person )
 
 }
-else if(gender == "female" ){
+else if(g == "female" ){
 alert("Welcome Ms. "+ person)
 }
 else{
@@ -17,7 +23,11 @@ let namedrink = prompt("Name of your drink ?")
 alert("Your drink is being prepared .")
 console.log("Name : "+person +"  Drink name : "+namedrink)
 
+let arr=[person,g,drink,namedrink];
+for(let i=0;i<arr.length;i++){
+console.log(arr[i])
 
+}
 
 
 
