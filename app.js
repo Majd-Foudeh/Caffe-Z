@@ -1,11 +1,14 @@
 let person = prompt("Enter Your Name :")
 let g = prompt("Enter your gender :")
 
-while(g !="male" &&  g !="female"){
+const gender = (gender)=>{
+    while(g !="male" &&  g !="female"){
 
-g = prompt("Please enter a correct gender")
-
+        g = prompt("Please enter a correct gender")
+        
+        }
 }
+gender(g);
 if(g == "male" ){
     alert("Welcome Mr. "+person )
 
