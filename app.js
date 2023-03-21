@@ -1,4 +1,5 @@
 let person = prompt("Enter Your Name :")
+let age = prompt("Enter Your age :")
 let g = prompt("Enter your gender :")
 
 const gender = (gender)=>{
@@ -31,12 +32,26 @@ for(let i=0;i<arr.length;i++){
 console.log(arr[i])
 
 }
+let main_div = document.getElementById("div");
+let div =document.createElement("div");
 
+const par =document.createElement("p");
+par.textContent = `${person}`;
 
+let ul = document.createElement("ul");
+ let li1 =document.createElement("li");
+ li1.textContent = `Gender : ${g}`;
+ let li2 =document.createElement("li");
+ li2.textContent= `Age : ${age}`;
+ let li3 =document.createElement("li");
+li3.textContent = `Drink : ${drink} ${namedrink}` ;
 
-
-
-
+main_div.appendChild(div);
+div.appendChild(par);
+div.appendChild(ul);
+ul.appendChild(li1);
+ul.appendChild(li2);
+ul.appendChild(li3);
 
 
 
