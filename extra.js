@@ -21,18 +21,30 @@
 
 // }
 // alert(j);
-let mm=" 0";
-for(let i=0;i<=20;i++){
-    if((i % 3)==0){
-       mm+=" "+i;
+// let mm=" 0";
+// for(let i=0;i<=20;i++){
+//     if((i % 3)==0){
+//        mm+=" "+i;
         
-    }
-}
-alert(mm)
-let num = prompt('enter a number between 0 and 100')
-if(num <0 && num > 100){
+//     }
+// }
+// alert(mm)
+// let num = prompt('enter a number between 0 and 100')
+// if(num <0 && num > 100){
 
-}
-let x= function (sum,num){
-    return sum/num;
-}
+// }
+// let x= function (sum,num){
+//     return sum/num;
+// }
+const find=function(arr){
+    let arr =[100];
+    for(let i=0;i<arr.length;i++){
+        arr[i]=i;
+    }
+    for(let i=1;i<arr.length;i++){
+      arr[i]
+    if(i!=arr[i]){
+       return ("the missing number is "+ i);
+    }
+    }
+    }
